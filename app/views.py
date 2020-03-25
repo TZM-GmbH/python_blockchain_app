@@ -9,8 +9,9 @@ from app import app
 # The node with which our application interacts, there can be multiple
 # such nodes as well.
 #CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
-CONNECTED_NODE_ADDRESS = "https://blockchain-app-friendly-waterbuck.eu-de.mybluemix.net/"
-
+#CONNECTED_NODE_ADDRESS = "http://blockchain-node0-quick-lizard.eu-de.mybluemix.net" #node 0
+CONNECTED_NODE_ADDRESS = "http://blockchain-node1-quick-gerenuk.eu-de.mybluemix.net" #node 1
+#CONNECTED_NODE_ADDRESS = "http://blockchain-node2-fantastic-meerkat.eu-de.mybluemix.net" #node 2
 posts = []
 
 

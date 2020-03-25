@@ -1,6 +1,6 @@
 ---
 applications:
-- name: blockchain-app
+- name: blockchain-node2
   random-route: true
   #command: /bin/sh -c flask run --port 9099
   command: python node_server.py
