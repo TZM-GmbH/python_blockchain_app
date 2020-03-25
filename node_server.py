@@ -1,6 +1,7 @@
 from hashlib import sha256
 import json
 import time
+import os
 
 from flask import Flask, request
 import requests
@@ -325,3 +326,11 @@ def announce_new_block(block):
 
 # Uncomment this line if you want to specify the port number in the code
 #app.run(debug=True, port=8000)
+
+#if __name__ == "__main__":
+    #port = int(os.getenv("PORT", 8000))
+    #app.run(debug=True, port=port)
+
+
+port = int(os.getenv("PORT", 9099))
+app.run(host='127.0.0.1', port = port, debug=True)

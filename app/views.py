@@ -8,7 +8,8 @@ from app import app
 
 # The node with which our application interacts, there can be multiple
 # such nodes as well.
-CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
+#CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
+CONNECTED_NODE_ADDRESS = "https://blockchain-app-friendly-waterbuck.eu-de.mybluemix.net/"
 
 posts = []
 
@@ -38,7 +39,7 @@ def fetch_posts():
 def index():
     fetch_posts()
     return render_template('index.html',
-                           title='YourNet: Decentralized '
+                           title='TzmNet: Decentralized '
                                  'content sharing',
                            posts=posts,
                            node_address=CONNECTED_NODE_ADDRESS,
